@@ -1,6 +1,6 @@
 const ThirdHeader = () => {
   return (
-    <div className="header-container">
+    <div className="third-header-container">
       <h1>THIRD HEADER</h1>
     </div>
   );

@@ -4,7 +4,7 @@ import ThirdHeader from './ThirdHeader';
 
 const Header = () => {
   return (
-    <div>
+    <div className="header">
       <FirstHeader />
       <SecondHeader />
       <ThirdHeader />
@@ -13,3 +13,5 @@ const Header = () => {
 }
  
 export default Header;
+
+// Header is divided into 3 separate headers

@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Manrope:wght@200;300;400;500;600;700;800&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+.first-header-container {
+  font-family: Manrope;
+  font-size: 12px;
+  background-color: rgb(7, 34, 50);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+}
+
+.inner-container {
+  display: flex;
+  width: 100%;
+  max-width: 1450px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.first-header-container .left-side {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 600px;
+}
+
+.first-header-container .right-side {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 200px;
+}

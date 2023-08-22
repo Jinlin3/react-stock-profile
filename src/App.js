@@ -1,4 +1,5 @@
 import './App.css';
+import './Header.css';
 import Main from './components/Main'
 
 function App() {
