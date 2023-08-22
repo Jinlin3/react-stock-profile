@@ -1,10 +1,13 @@
+import BenzingaPro from './images/benzinga-pro.png';
+import DownArrow from './images/down-arrow.svg';
+
 const FirstHeader = () => {
   return (
     <div className="first-header-container">
       <div className="inner-container">
         <div className="left-side">
-          <div className="benzinga-pro-logo">
-            <img src="./images/benzinga-pro.png" alt="BENZINGA PRO" />
+          <div className="benzinga-pro-container">
+            <img className="benzinga-pro-img" src={ BenzingaPro } alt="BENZINGA PRO" />
           </div>
           <div className="data-and-apis">DATA & APIS</div>
           <div className="events">EVENTS</div>
@@ -15,7 +18,10 @@ const FirstHeader = () => {
         </div>
         <div className="right-side">
           <div className="contribute">Contribute</div>
-          <div className="language"></div>
+          <div className="language">
+            EN
+            <img src={ DownArrow } alt="" />
+          </div>
           <div className="sign-in">SIGN IN</div>
         </div>
       </div>
