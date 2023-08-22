@@ -19,8 +19,8 @@ const FirstHeader = () => {
         <div className="right-side">
           <div className="contribute">Contribute</div>
           <div className="language">
-            EN
-            <img src={ DownArrow } alt="" />
+            <p>EN</p>
+            <img className="down-arrow-img" src={ DownArrow } alt="" />
           </div>
           <div className="sign-in">SIGN IN</div>
         </div>

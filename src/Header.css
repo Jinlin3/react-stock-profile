@@ -87,5 +87,16 @@
 }
 
 .language {
-  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(0, 56, 94);
+}
+.down-arrow-img {
+  height: 10px;
+  margin-left: 5px;
+}
+.sign-in {
+  font-size: 14px;
+  font-weight: 700;
 }
