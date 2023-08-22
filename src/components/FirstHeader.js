@@ -1,4 +1,4 @@
-import BenzingaPro from './images/benzinga-pro.png';
+import BenzingaPro from './images/benzinga-pro.svg';
 import DownArrow from './images/down-arrow.svg';
 
 const FirstHeader = () => {
