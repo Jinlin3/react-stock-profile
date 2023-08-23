@@ -126,6 +126,12 @@
   font-size: 14px;
   margin-left: 5px;
 }
+.second-header-container .left-side div {
+  transition: background-color 0.1s;
+}
+.second-header-container .left-side div:hover {
+  background-color: rgb(222, 235, 255);
+}
 .benzinga-img {
   height: 25px;
   margin-right: 6px;
@@ -151,6 +157,10 @@
   border-radius: 5px;
   padding: 10px 12px;
   cursor: pointer;
+  transition: background-color 0.1s;
+}
+.research-button:hover {
+  background-color: rgb(255, 94, 54);
 }
 .research-button div {
   padding: 0;
@@ -176,6 +186,14 @@
   margin-left: -5px;
   margin-right: -8px;
 }
+.my-stocks,
+.tools {
+  transition: background-color 0.1s;
+}
+.my-stocks:hover,
+.tools:hover {
+  background-color: rgb(222, 235, 255);
+}
 
 /* third header */
 .third-header-container {
@@ -187,6 +205,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 30px;
+  height: 50px;
   margin: 0;
 }
