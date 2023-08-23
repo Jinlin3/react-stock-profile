@@ -173,12 +173,6 @@
   margin-left: -4px;
   margin-right: -8px;
 }
-.stocks-img {
-  height: 20px;
-}
-.wrench-img {
-  height: 20px;
-}
 .my-tools {
   cursor: pointer;
 }
@@ -188,11 +182,16 @@
 }
 .my-stocks,
 .tools {
-  transition: background-color 0.1s;
+  transition: color 0.1s;
 }
 .my-stocks:hover,
 .tools:hover {
-  background-color: rgb(222, 235, 255);
+  color: rgb(0, 119, 255);
+}
+
+.second-header-container svg {
+  height: 20px;
+  width: 20px;
 }
 
 /* third header */

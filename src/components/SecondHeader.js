@@ -1,7 +1,7 @@
 import Benzinga from './images/benzinga.svg';
 import DoubleForwardArrow from './images/double-forward-arrow.svg';
-import Stocks from './images/stocks.svg';
-import Wrench from './images/wrench.svg';
+import StocksImg from './images/StocksImg';
+import WrenchImg from './images/WrenchImg';
 
 const SecondHeader = () => {
   return (
@@ -27,11 +27,11 @@ const SecondHeader = () => {
             <img src={ DoubleForwardArrow } alt="" className="double-forward-arrow-img" />
           </button>
           <div className="my-stocks">
-            <img src={ Stocks } alt="" className="stocks-img" />
+            <StocksImg />
             <div>My Stocks</div>
           </div>
           <div className="tools">
-            <img src={ Wrench } alt="" className="wrench-img" />
+            <WrenchImg />
             <div>Tools</div>
           </div>
         </div>
