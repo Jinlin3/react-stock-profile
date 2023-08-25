@@ -11,7 +11,7 @@ const SecondHeader = () => {
           <img className="benzinga-img" src={ Benzinga } alt="" />
           <div className="our-services">Our Services</div>
           <div className="news">News</div>
-          <div className="markets">Markets</div>
+          <div className="markets-tab">Markets</div>
           <div className="ratings">Ratings</div>
           <div className="ideas">Ideas</div>
           <div className="yield">Yield</div>

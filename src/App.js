@@ -1,6 +1,7 @@
-import './App.css';
-import './Header.css';
-import Main from './components/Main'
+import './css-files/Header.css';
+import './css-files/StockDetails.css';
+import './css-files/index.css';
+import Main from './Main'
 
 function App() {
   return (
