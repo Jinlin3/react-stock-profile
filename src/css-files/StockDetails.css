@@ -32,6 +32,7 @@
   border: 1px rgb(223, 227, 231) solid;
   margin-right: 8px;
   border-radius: 3px;
+  cursor: pointer;
 }
 .img-container img {
   height: 50px;
