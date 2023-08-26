@@ -1,12 +1,108 @@
-h1 {
-  margin: 0;
-  border: 1px red solid;
-}
-
+/* company-actions-container */
 .stock-details-container {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
   width: 100%;
+}
+.stock-details-container * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.company-actions-container {
+  font-family: 'Open Sans';
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.company-info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.img-container {
+  height: 80px;
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px rgb(223, 227, 231) solid;
+  margin-right: 8px;
+  border-radius: 3px;
+}
+.img-container img {
+  height: 50px;
+  width: 50px;
+  margin-bottom: 5px;
+}
+.name-and-abbreviation {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.full-name {
+  font-size: 24px;
+  font-weight: 700;
+  margin-right: 6px;
+}
+.abbreviation {
+  font-size: 12.8px;
+  color: rgb(45, 45, 45);
+  margin-bottom: 5px;
+}
+.add-to-watchlist {
+  font-family: 'Open Sans';
+  font-size: 15px;
+  font-weight: bold;
+  border: 1px rgb(17, 75, 201) solid;
+  background-color: rgb(198, 226, 253);
+  color: rgb(17, 75, 201);
+  padding: 6px 12px;
+  border-radius: 5px;
+  margin-top: 5px;
+  cursor: pointer;
+  transition: background-color 0.1s;
+}
+.add-to-watchlist:hover {
+  background-color: rgb(170, 213, 255);
+}
+.company-actions button {
+  padding: 6px 12px;
+  font-family: 'Open Sans';
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.perks {
+  border: 1px rgb(255, 102, 0) solid;
+  color: rgb(194, 78, 0);
+  background-color: rgb(255, 213, 189);
+  transition: background-color 0.1s;
+}
+.perks:hover {
+  background-color: rgb(255, 192, 156);
+}
+.buy {
+  border: 1px green solid;
+  color: green;
+  background-color: rgb(180, 255, 214);
+  transition: background-color 0.1s;
+}
+.buy:hover {
+  background-color: rgb(144, 255, 194);
+}
+.compare-brokers {
+  border: 1px rgb(17, 75, 201) solid;
+  color: rgb(17, 75, 201);
+  background-color: rgb(198, 226, 253);
+  transition: background-color 0.1s;
+}
+.compare-brokers:hover {
+  background-color: rgb(170, 213, 255);
 }
