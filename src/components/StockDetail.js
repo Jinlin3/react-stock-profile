@@ -1,24 +1,25 @@
-import CompanyActions from './CompanyActions';
+import AppleLogo from './images/apple-logo.svg'
 
-const companyInfo = {
-  name: 'Apple Inc',
-  abbreviation: 'NASDAQ:APPL',
-
-  atClosePrice: 178.61,
-  atClosePriceChange: 2.23,
-  atClosePercentChange: 1.26,
-  lastCloseTime: 'Aug 25',
-
-  afterHoursPrice: 178.3611,
-  afterHoursPriceChange: -0.2489,
-  afterHoursPercentChange: -0.14,
-  afterHoursTime: '6:24PM EDT'
-}
-
-const StockDetails = () => {
+const StockDetails = ({ company }) => {
   return (
-    <div className="stock-details-container">
-      <CompanyActions companyInfo={companyInfo} />
+    <div className="company-actions-container">
+      <div className="company-info">
+        <div className="img-container">
+          <img src={ AppleLogo } alt="NOT LOADING" />
+        </div>
+        <div className="container">
+          <div className="name-and-abbreviation">
+            <div className="full-name">{ company[0].name }</div>
+            <div className="abbreviation">({ company[0].abbreviation })</div>
+          </div>
+          <button className="add-to-watchlist">Add to Watchlist +</button>
+        </div>
+      </div>
+      <div className="company-actions">
+        <button className="perks">Perks</button>
+        <button className="buy">Buy</button>
+        <button className="compare-brokers">Compare Brokers</button>
+      </div>
     </div>
   );
 }

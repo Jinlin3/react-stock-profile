@@ -1,6 +1,7 @@
 import './css-files/Header.css';
 import './css-files/StockDetails.css';
 import './css-files/index.css';
+import './css-files/StockPrices.css';
 import Main from './Main'
 
 function App() {

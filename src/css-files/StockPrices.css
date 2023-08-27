@@ -1,0 +1,22 @@
+.stock-prices-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Open Sans';
+  margin-top: 10px;
+}
+.stock-prices-container .change {
+  display: flex;
+}
+.arrow-container {
+  fill: rgb(57, 81, 115);
+}
+.prices {
+  margin-bottom: 10px;
+}
+.stock-prices-container .date {
+  display: flex;
+}
+.stock-prices-container .string {
+  margin-right: 5px;
+}
