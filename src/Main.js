@@ -1,7 +1,7 @@
-import Header from './components/Header';
 import StockDetails from './components/StockDetail';
 import StockPrices from './components/StockPrices';
-import EndContainer from './components/EndContainer';
+import StockGraph from './components/StockGraph';
+import Navbar from './components/Navbar';
 
 const company = [
   {
@@ -44,10 +44,11 @@ const company = [
 const Main = () => {
   return (
     <div className="main">
-      <Header />
       <div className="body-inner-container">
         <StockDetails company={ company } />
         <StockPrices price={ company.filter((company) => company.group === 2) } tableInfo={ company.filter((company) => company.group === 3) } />
+        <Navbar />
+        <StockGraph company={ company.filter((company) => company.group === 1) } />
       </div>
     </div>
   );

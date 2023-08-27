@@ -1,5 +1,23 @@
-
+/* Footer */
 .gradient {
   background-image: linear-gradient(rgb(0, 32, 53), rgb(0, 67, 112));
-  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.end-message-container {
+  max-width: 1450px;
+  width: 100%;
+  background-image: linear-gradient(rgb(0, 67, 112), rgb(0, 32, 53));
+  border-left: 1px white solid;
+  border-right: 1px white solid;
+}
+.end-container-message {
+  color: white;
+  font-family: 'Open Sans';
+  font-weight: 500;
+  font-size: 20px;
+  padding: 10px;
+}
+.end-container-message a {
+  color: rgb(190, 60, 190);
 }
