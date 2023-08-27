@@ -1,6 +1,7 @@
 import Header from './components/Header';
 import StockDetails from './components/StockDetail';
 import StockPrices from './components/StockPrices';
+import EndContainer from './components/EndContainer';
 
 const company = [
   {
