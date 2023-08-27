@@ -11,9 +11,11 @@ const StockPrices = ({ price, tableInfo }) => {
       <div className="at-close-after-hours-container">
         {price.map((price) => (
           <div className="prices" key={ price.index }>
-            <div className="price">${ price.price }</div>
+            <div className="price" style={{ fontSize: price.index === 'atClose' ? '30px' : '20px'}}>${ price.price }</div>
             <div className="change-container">
-              <div className="change">
+              <div className="change" style={{
+                color: price.change >= 0 ? 'rgb(0, 197, 0)' : 'rgb(240, 82, 82)',
+                fontSize: price.index === 'atClose' ? '20px' : '16px'}}>
                 <div className="arrow-container">
                   {price.change >= 0 ? (
                     <IncreaseArrowTall />
@@ -21,8 +23,8 @@ const StockPrices = ({ price, tableInfo }) => {
                     <DecreaseArrowTall />
                   )}
                 </div>
-              { price.change }
-              [{ price.percentChange }%]
+              <div className="price-change">{ price.change }</div>
+              <div className="price-percent-change">[{ price.percentChange }%]</div>
             </div>
             <div className="date">
               { price.index === 'atClose' ? (
