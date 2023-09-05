@@ -46,7 +46,7 @@ const Main = () => {
     <div className="main">
       <div className="body-inner-container">
         <StockDetails company={ company } />
-        <StockPrices price={ company.filter((company) => company.group === 2) } tableInfo={ company.filter((company) => company.group === 3) } />
+        <StockPrices />
         <Navbar />
         <StockGraph company={ company.filter((company) => company.group === 1) } />
       </div>
