@@ -1,6 +1,6 @@
 const EndContainer = () => {
   return (
-    <div class="gradient">
+    <div className="gradient">
       <div className="end-message-container">
         <div className="end-container-message">
           <div>Benzinga Clone</div>

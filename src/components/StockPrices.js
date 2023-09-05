@@ -1,10 +1,13 @@
 import IncreaseArrowTall from './images/IncreaseArrowTall';
 import DecreaseArrowTall from './images/DecreaseArrowTall';
+import useFetch from './useFetch';
 
 const atCloseString = 'At close: ';
 const afterHoursString = 'After Hours: ';
 
 const StockPrices = ({ price, tableInfo }) => {
+  const url = `https://api.polygon.io/v1/open-close/AAPL/2023-09-01?adjusted=true&apiKey=VI0`;
+  const data = useFetch(url);
   const table = tableInfo[0];
   return (
     <div className="stock-prices-container">
