@@ -4,6 +4,7 @@ import './css-files/index.css';
 import './css-files/StockPrices.css';
 import './css-files/EndContainer.css';
 import './css-files/StockGraph.css';
+import './css-files/Error.css';
 
 import Header from './components/Header';
 import Main from './Main';
