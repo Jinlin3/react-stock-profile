@@ -1,6 +1,6 @@
 import AppleLogo from './images/apple-logo.svg'
 
-const StockDetails = ({ company }) => {
+const StockDetails = ({ companyName: company }) => {
   return (
     <div className="company-actions-container">
       <div className="company-info">
@@ -9,8 +9,8 @@ const StockDetails = ({ company }) => {
         </div>
         <div className="container">
           <div className="name-and-abbreviation">
-            <div className="full-name">{ company[0].name }</div>
-            <div className="abbreviation">({ company[0].abbreviation })</div>
+            <div className="full-name">{ company.name }</div>
+            <div className="abbreviation">({ company.abbreviation })</div>
           </div>
           <button className="add-to-watchlist">Add to Watchlist +</button>
         </div>

@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 const useFetch = (url) => {
   const [data, setData] = useState(null);
   const fullURL = url + process.env.REACT_APP_POLYGON_KEY;
-  console.log(fullURL);
+  console.log('Full URL is: ' + fullURL);
 
   useEffect(() => {
     fetch(fullURL)

@@ -6,6 +6,7 @@ const EndContainer = () => {
           <div>Benzinga Clone</div>
           <div>Developed by: Jack Lin</div>
           <a href="https://github.com/Jinlin3">GitHub: Jinlin3</a>
+          <div>Note: I'm using a free API with limits, therefore the stocks on the header are placeholder values!</div>
         </div>
       </div>
     </div>

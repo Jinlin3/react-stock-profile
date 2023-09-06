@@ -1,9 +1,6 @@
 import IncreaseArrowTall from './images/IncreaseArrowTall';
 import DecreaseArrowTall from './images/DecreaseArrowTall';
 
-const atCloseString = 'At close: ';
-const afterHoursString = 'After Hours: ';
-
 const StockPrices = ({ stockPrices: data, date }) => {
   const atCloseChange = (data.open - data.close).toFixed(3);
   const atClosePercentChange = ((atCloseChange / data.open) * 100).toFixed(2);
