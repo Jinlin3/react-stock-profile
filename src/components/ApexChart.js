@@ -1,16 +1,20 @@
 import Chart from 'react-apexcharts';
-import { useState } from 'react';
 
 const ApexChart = ( data ) => {
-  const [series, setSeries] = useState(null);
   let dataList = [];
 
   data.data.map((data) => (
     dataList.push(data.vw)
   ));
-  dataList = dataList.slice(0, 79);
+  dataList = dataList.slice(0, 80);
 
-  console.log(dataList);
+  let changeList = [0];
+  for (let i = 2; i < 80; i++) {
+    changeList.push((dataList[i] - dataList[i-1]).toFixed(2));
+  }
+  console.log("datalist: " + dataList);
+  console.log("changeList: " + changeList);
+
 
   const chartData = {
     options: {
@@ -44,12 +48,20 @@ const ApexChart = ( data ) => {
           formatter: function (value) {
             return "$" + value.toFixed(2);
           }
+        },
+        max: function (max) {
+          return max + 1;
+        },
+        min: function (min) {
+          return min - 1;
         }
-      }
+      },
+      colors: ["#ff2962"]
     },
     series: [{
       name: 'Price',
-      data: dataList
+      data: changeList,
+      colors: ['#9C27B0']
     }]
   }
 
