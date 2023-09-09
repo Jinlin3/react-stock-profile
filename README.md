@@ -4,6 +4,8 @@ A replication of Benzinga's website using knowledge of the CSS Box Model.
 
 All of the HTML/CSS is different from their website. (I replicated, not copied)
 
+Deployment on Vercel: https://react-benzinga.vercel.app
+
 ## APIs and Libraries
 
 Polygon (https://polygon.io/dashboard)
@@ -12,7 +14,7 @@ ApexCharts (https://apexcharts.com)
 
 ## Technologies
 
-HTML/CSS/React
+HTML / CSS / React
 
 ## IMPORTANT
 
