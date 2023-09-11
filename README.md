@@ -16,6 +16,13 @@ ApexCharts (https://apexcharts.com)
 
 HTML / CSS / React
 
+## Problems and Improvement
+
+* Page is not responsive (Does not support different-sized screens; did not implement media queries)
+* Page is only able to load client-side due to React
+* Only able to fetch data from Apple, no other different options for stocks
+* GOAL: Fix all of these problems by creating the same project with Next.js/TypeScript/Bootstrap
+
 ## IMPORTANT
 
 If you wish to clone this repository, you must create an .env file with the variable: REACT_APP_POLYGON_KEY
